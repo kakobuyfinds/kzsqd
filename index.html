@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>SuperBuy spreadsheet: vind je stijl, controleer je keuze</title>
+  <meta name="description" content="Gebruik een SuperBuy spreadsheet met aandacht voor maat, QC-foto’s en totale kosten. Nederlandstalige keuzegids met tien categorieën en praktische antwoorden.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#34263e">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="SuperBuy spreadsheet — van inspiratie naar een doordachte keuze">
+  <meta property="og:description" content="Sneakers, kleding en accessoires vergelijken? Begin bij de categorie, controleer de maat en bekijk het hele kostenplaatje.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Rode Nike sportschoenen op een rode achtergrond">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SuperBuy spreadsheet: vind je stijl, controleer je keuze">
+  <meta name="twitter:description" content="Een praktische Nederlandstalige gids voor productlinks, maten, QC-foto’s en kosten.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!-- index.html. Voeg na publicatie een zelfverwijzende canonical toe met de werkelijke URL van deze pagina. -->
+  <!--
+    Redactionele zoekintentieanalyse, 5 november 2026.
+    Willekeurig gekozen hoofdterm: SuperBuy spreadsheet.
+    Secundaire thema's: SuperBuy finds; SuperBuy maattabel; SuperBuy QC-foto's; SuperBuy verzendkosten.
+    Google kon niet rechtstreeks worden uitgelezen. Dit zijn tien via webzoekresultaten geraadpleegde
+    referenties, geen bevestigde Google-top-10. Titels, aantallen en kwaliteitsclaims zijn niet overgenomen.
+    su-perbuy.com — categorieën en productverwijzingen.
+    superbuyspreadsheet.org — maten, controlefoto's en kosten.
+    repsheet.net/spreadsheet/superbuy — productfilters en QC-vragen.
+    sheetsuperbuy.com — schoenen, kleding en accessoires.
+    superbuy-spreadsheet.org — keuzegidsen en kostenoverzicht.
+    superbuypromo.com — productontdekking per categorie.
+    superbuyfind.org/spreadsheet/ — begrippen en categorie-indeling.
+    superbuysheets.top/faq — directe antwoorden voor beginners.
+    superbuyyupoo.com/en — bronlinks, varianten en maten.
+    superbuy.boutique/en/blog/how-to-use-superbuy-spreadsheet — stapsgewijze oriëntatie.
+    Lange zoekvragen zijn verwerkt in de zichtbare gidsen en FAQ; er is geen verborgen trefwoordenlijst.
+  -->
+  <style>
+    :root{
+      color-scheme:light;
+      --paper:#faf7f0;
+      --ink:#29252b;
+      --muted:#635d66;
+      --plum:#34263e;
+      --accent:#725283;
+      --line:#ddd5df;
+      --lavender:#ede6f1;
+      --white:#fff;
+      --radius:22px
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.65
+    }
+    a{
+      color:inherit;
+      text-decoration-thickness:1px;
+      text-underline-offset:4px
+    }
+    a:hover{color:var(--accent)}
+    a:focus-visible,summary:focus-visible{
+      outline:3px solid #9369a7;
+      outline-offset:5px
+    }
+    img{
+      display:block;
+      max-width:100%;
+      height:auto;
+      background:#eee9e7
+    }
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{
+      line-height:1.15;
+      letter-spacing:-.035em
+    }
+    h1,h2{
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:500
+    }
+    h1{font-size:clamp(2.8rem,6vw,5.4rem)}
+    h2{font-size:clamp(2rem,3.5vw,3.15rem)}
+    h3{font-size:1.2rem;line-height:1.35}
+    p+p{margin-top:1rem}
+    .wrap{
+      width:min(1200px,calc(100% - 48px));
+      margin-inline:auto
+    }
+    .topbar{
+      background:var(--plum);
+      color:#fff;
+      font-size:.8rem;
+      letter-spacing:.07em;
+      text-align:center;
+      padding:9px 20px
+    }
+    .header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:24px;
+      padding-block:24px;
+      border-bottom:1px solid var(--line)
+    }
+    .brand{
+      text-decoration:none;
+      font-size:1.25rem;
+      font-weight:800;
+      letter-spacing:-.04em
+    }
+    .brand span{font-weight:400;color:var(--muted)}
+    .header-nav{display:flex;gap:24px;font-size:.86rem}
+    .header-nav a{text-decoration:none}
+    .eyebrow{
+      font-size:.74rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-weight:750;
+      color:var(--accent)
+    }
+    .category-section{padding-block:25px 30px}
+    .category-label{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      margin-bottom:12px
+    }
+    .category-label h2{
+      font:700 .85rem/1.4 system-ui,sans-serif;
+      letter-spacing:0
+    }
+    .category-label p{font-size:.76rem;color:var(--muted)}
+    .categories{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:9px
+    }
+    .categories a{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      min-height:54px;
+      padding:12px 15px;
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:11px;
+      text-decoration:none;
+      font-size:.83rem;
+      font-weight:650;
+      transition:background .15s
+    }
+    .categories a:hover{background:var(--lavender)}
+    .categories span{color:var(--accent);font-size:1rem}
+    .hero{
+      display:grid;
+      grid-template-columns:1.03fr 1fr;
+      overflow:hidden;
+      border-radius:var(--radius);
+      background:var(--lavender)
+    }
+    .hero-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-start;
+      padding:clamp(28px,4.8vw,65px)
+    }
+    .hero h1{margin:16px 0 24px}
+    .hero h1 em{color:var(--accent);font-weight:400}
+    .hero-copy>p:not(.eyebrow){
+      max-width:44ch;
+      color:#514958;
+      font-size:1rem
+    }
+    .button{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:22px;
+      background:var(--plum);
+      color:#fff;
+      text-decoration:none;
+      border-radius:999px;
+      padding:14px 24px;
+      font-size:.88rem;
+      font-weight:700
+    }
+    .button:hover{background:var(--accent);color:#fff}
+    .hero .button{margin-top:28px}
+    .hero small{margin-top:13px;color:#63566b;font-size:.73rem}
+    .hero-visual{
+      display:flex;
+      flex-direction:column;
+      background:#cb393f
+    }
+    .hero-visual img{
+      width:100%;
+      height:100%;
+      min-height:450px;
+      object-fit:cover;
+      flex:1
+    }
+    .hero-visual figcaption{
+      padding:10px 18px;
+      background:var(--plum);
+      color:#f7f0fb;
+      font-size:.72rem;
+      line-height:1.5
+    }
+    .intro{
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:40px;
+      padding:45px 0;
+      border-bottom:1px solid var(--line)
+    }
+    .intro .eyebrow{padding-top:4px}
+    .intro p{font-size:1.08rem;max-width:79ch}
+    .intro strong{font-weight:750}
+    .section{padding-top:64px}
+    .section-heading{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:30px;
+      margin-bottom:28px
+    }
+    .section-heading h2{margin-top:8px;max-width:23ch}
+    .section-heading>p{
+      max-width:35ch;
+      color:var(--muted);
+      font-size:.9rem
+    }
+    .mood-grid{
+      display:grid;
+      grid-template-columns:1.3fr 1fr 1fr;
+      gap:20px
+    }
+    .mood-card{min-width:0}
+    .mood-card>a{display:block;text-decoration:none}
+    .mood-card .photo{
+      overflow:hidden;
+      border-radius:16px;
+      background:#eee8e5
+    }
+    .mood-card img{
+      width:100%;
+      height:310px;
+      object-fit:cover;
+      transition:transform .2s
+    }
+    .mood-card a:hover img{transform:scale(1.025)}
+    .mood-card:first-child img{object-position:center 35%}
+    .mood-card:nth-child(2) img{object-fit:contain;background:#e8e8e8}
+    .mood-card:nth-child(3) img{object-fit:contain;background:#fff}
+    .mood-card h3{margin-top:16px}
+    .mood-card p{font-size:.87rem;color:var(--muted);margin-top:8px}
+    .mood-card .tag{
+      display:inline-block;
+      margin-top:12px;
+      font-size:.73rem;
+      color:var(--accent);
+      font-weight:700
+    }
+    .image-note{
+      font-size:.75rem;
+      color:var(--muted);
+      margin-top:22px;
+      max-width:95ch
+    }
+    .dossier{
+      display:grid;
+      grid-template-columns:.78fr 1.6fr;
+      gap:48px;
+      margin-top:68px;
+      padding:42px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:#fff
+    }
+    .dossier-intro h2{margin:12px 0 20px}
+    .dossier-intro p:not(.eyebrow){color:var(--muted);font-size:.91rem}
+    .dossier-intro a{
+      display:inline-block;
+      font-size:.85rem;
+      font-weight:700;
+      margin-top:22px
+    }
+    .steps{margin:0;padding:0;list-style:none;counter-reset:steps}
+    .steps li{
+      position:relative;
+      padding:0 0 24px 50px;
+      margin-bottom:23px;
+      border-bottom:1px solid var(--line);
+      counter-increment:steps
+    }
+    .steps li:last-child{border:0;margin-bottom:0;padding-bottom:0}
+    .steps li:before{
+      content:"0" counter(steps);
+      position:absolute;
+      left:0;
+      top:0;
+      color:var(--accent);
+      font-family:Georgia,serif;
+      font-size:1.6rem
+    }
+    .steps p{font-size:.9rem;color:var(--muted);margin-top:7px}
+    .journal{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:28px
+    }
+    .journal article{border-top:3px solid var(--plum);padding-top:21px}
+    .journal .topic{
+      font-size:.73rem;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      color:var(--accent)
+    }
+    .journal h3{
+      font:500 1.6rem/1.2 Georgia,serif;
+      margin:12px 0 18px;
+      letter-spacing:-.02em
+    }
+    .journal p{font-size:.91rem;color:var(--muted)}
+    .journal ul{padding-left:18px;font-size:.88rem;color:var(--muted)}
+    .journal li+li{margin-top:9px}
+    .journal strong{color:var(--ink)}
+    .compare{
+      margin-top:28px;
+      overflow-x:auto;
+      border:1px solid var(--line);
+      border-radius:14px
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      text-align:left;
+      font-size:.87rem;
+      min-width:620px
+    }
+    caption{
+      text-align:left;
+      padding:18px 20px;
+      font-weight:750;
+      background:var(--lavender)
+    }
+    th,td{
+      padding:15px 20px;
+      vertical-align:top;
+      border-top:1px solid var(--line)
+    }
+    thead th{color:var(--plum);background:#f3eef5}
+    tbody th{font-weight:650;width:23%}
+    td{color:var(--muted)}
+    .detail-strip{
+      display:grid;
+      grid-template-columns:170px 1fr;
+      align-items:center;
+      gap:32px;
+      margin-top:35px;
+      background:#eee6df;
+      padding:22px;
+      border-radius:18px
+    }
+    .detail-strip img{
+      width:170px;
+      height:170px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:10px
+    }
+    .detail-strip h3{
+      font:500 1.7rem/1.2 Georgia,serif;
+      margin-bottom:10px
+    }
+    .detail-strip p{max-width:76ch;font-size:.9rem;color:var(--muted)}
+    .faq-layout{
+      display:grid;
+      grid-template-columns:.8fr 1.4fr;
+      gap:64px
+    }
+    .faq-intro h2{margin:10px 0 18px}
+    .faq-intro p:not(.eyebrow){font-size:.93rem;color:var(--muted)}
+    details{border-top:1px solid var(--line);padding:18px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{
+      position:relative;
+      cursor:pointer;
+      list-style:none;
+      font-weight:700;
+      font-size:.95rem;
+      padding-right:28px
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{
+      content:"+";
+      position:absolute;
+      right:1px;
+      font-weight:400;
+      font-size:1.3rem;
+      color:var(--accent);
+      top:-3px
+    }
+    details[open] summary:after{content:"−"}
+    details p{margin-top:12px;font-size:.91rem;color:var(--muted)}
+    .closing{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:28px;
+      background:var(--plum);
+      color:#fff;
+      padding:38px 42px;
+      border-radius:var(--radius);
+      margin:64px 0 35px
+    }
+    .closing h2{font-size:2rem}
+    .closing p{
+      font-size:.88rem;
+      margin-top:10px;
+      color:#e4d8ea;
+      max-width:65ch
+    }
+    .closing .button{
+      background:#f4ecf5;
+      color:var(--plum);
+      flex-shrink:0
+    }
+    .footer{padding:0 0 30px;color:var(--muted);font-size:.76rem}
+    .footer p{max-width:110ch}
+    .footer .footer-row{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      margin-bottom:14px;
+      padding-top:18px;
+      border-top:1px solid var(--line)
+    }
+    @media(min-width:800px){
+      .section{content-visibility:auto;contain-intrinsic-size:auto 600px}
+    }
+    @media(max-width:980px){
+      .categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .hero-copy{padding:32px}
+      .hero-visual img{min-height:430px}
+      .mood-card img{height:260px}
+      .dossier{gap:28px;padding:30px}
+      .faq-layout{gap:36px}
+      .journal{gap:20px}
+      .header-nav{gap:14px}
+      .hero h1{font-size:3.7rem}
+    }
+    @media(max-width:700px){
+      .wrap{width:min(100% - 32px,1200px)}
+      .topbar{font-size:.69rem}
+      .header{padding-block:19px}
+      .brand{font-size:1.1rem}
+      .brand span,.header-nav a:first-child{display:none}
+      .header-nav{font-size:.78rem}
+      .category-label{align-items:flex-start}
+      .category-label p{max-width:22ch;text-align:right}
+      .categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+      .categories a{font-size:.76rem;padding:10px 11px;min-height:49px}
+      .hero{grid-template-columns:1fr}
+      .hero-copy{padding:32px 26px}
+      .hero h1{font-size:3.15rem;max-width:12ch}
+      .hero-visual img{min-height:0;height:300px;flex:none}
+      .hero-visual figcaption{font-size:.68rem}
+      .intro{grid-template-columns:1fr;gap:12px;padding-block:30px}
+      .intro p{font-size:1rem}
+      .section{padding-top:44px}
+      .section-heading{display:block}
+      .section-heading>p{margin-top:15px;max-width:100%}
+      .mood-grid{grid-template-columns:1fr 1fr;gap:24px 15px}
+      .mood-card:first-child{grid-column:1/-1}
+      .mood-card:first-child img{height:340px}
+      .mood-card img{height:190px}
+      .mood-card h3{font-size:1.05rem}
+      .mood-card p{font-size:.8rem}
+      .dossier{
+        grid-template-columns:1fr;
+        padding:27px 22px;
+        margin-top:44px;
+        gap:30px
+      }
+      .journal{grid-template-columns:1fr;gap:30px}
+      .journal article{padding-top:18px}
+      .journal h3{font-size:1.6rem}
+      .detail-strip{grid-template-columns:90px 1fr;gap:18px;padding:18px}
+      .detail-strip img{width:90px;height:120px}
+      .detail-strip h3{font-size:1.35rem}
+      .detail-strip p{font-size:.81rem}
+      .faq-layout{grid-template-columns:1fr;gap:25px}
+      .closing{display:block;padding:28px 24px;margin-top:44px}
+      .closing .button{margin-top:23px}
+      .closing h2{font-size:1.8rem}
+      .footer .footer-row{display:block}
+      .footer .footer-row span{display:block;margin-top:8px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{transition:none!important}
+    }
+    @media print{
+      body{background:#fff}
+      .hero-visual,.mood-grid,.header-nav,.closing{display:none}
+      .hero,.dossier,.journal,.faq-layout{display:block}
+      .wrap{width:100%}
+      .section{content-visibility:visible}
+      .journal article{margin-bottom:25px}
+      details{break-inside:avoid}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"CollectionPage",
+        "@id":"#pagina",
+        "name":"SuperBuy spreadsheet: vind je stijl, controleer je keuze",
+        "description":"Nederlandstalige keuzegids voor productlinks, maten, QC-foto’s en totale kosten, met tien categorieën op hipobuyfind.com.",
+        "inLanguage":"nl",
+        "about":{
+          "@type":"Thing",
+          "name":"SuperBuy spreadsheet",
+          "description":"Een geordende verzameling productverwijzingen die als startpunt voor productonderzoek wordt gebruikt."
+        },
+        "hasPart":[
+          {"@id":"#artikel-maat"},
+          {"@id":"#artikel-qc"},
+          {"@id":"#artikel-kosten"},
+          {"@id":"#vragen"}
+        ]
+      },
+      {
+        "@type":"Article",
+        "@id":"#artikel-maat",
+        "headline":"Sneakers en kleding: laat centimeters beslissen",
+        "inLanguage":"nl",
+        "articleSection":"Maat en pasvorm",
+        "description":"Vergelijk de maattabel van de gekozen variant met eigen maten en een goed passend kledingstuk.",
+        "articleBody":"Een SuperBuy maattabel vergelijken begint bij het specifieke model. Een bekende EU-maat is geen vervanging voor de tabel van de verkoper. Meet je voetlengte en bekijk welke meetmethode wordt gebruikt; een binnenzoolmaat is iets anders dan voetlengte. Voor een hoodie of sweater zijn borstbreedte, ruglengte en mouwlengte nuttiger dan alleen S, M of L. Leg een goed passend kledingstuk plat en vergelijk dezelfde meetpunten. Een T-shirt met ruime pasvorm kiezen vraagt om schouderbreedte én lengte. Een jas voor laagjes vergelijken vraagt om ruimte voor wat je eronder draagt. Een broek of short op taille selecteren vraagt ook om heupmaat en lengte. Een kleding-set op maat kiezen betekent dat bovenstuk en broek afzonderlijk moeten passen."
+      },
+      {
+        "@type":"Article",
+        "@id":"#artikel-qc",
+        "headline":"QC-foto’s lezen zonder te veel te beloven",
+        "inLanguage":"nl",
+        "articleSection":"Beeld en controle",
+        "description":"Gebruik overzichts- en detailfoto’s voor kleur, uitvoering, naden en zichtbare schade; foto’s bewijzen geen authenticiteit.",
+        "articleBody":"SuperBuy QC-foto’s beoordelen betekent eerst vaststellen dat de foto’s jouw gekozen uitvoering tonen. Vergelijk kleur, maatlabel, aantal en zichtbare staat met je bestelling. Een productfoto kan door licht of nabewerking afwijken. Voor sneakers op afwerking controleren zijn foto’s van beide schoenen, zolen en naden nuttig. Bij kleding naden en labels bekijken helpt om verkeerde uitvoeringen of zichtbare schade te signaleren. Voor een pet de omtrek controleren blijft een maatopgave nodig; een foto vertelt weinig over pasvorm. Sieraden op materiaal vergelijken vraagt om een duidelijke productspecificatie. Een close-up van een ring of sluiting vervangt die informatie niet. QC is een visuele controle, geen bewijs van echtheid, materiaalveiligheid of levensduur. Bewaar de bronlink en vraag om aanvullende informatie als een belangrijk detail ontbreekt."
+      },
+      {
+        "@type":"Article",
+        "@id":"#artikel-kosten",
+        "headline":"Een eerlijke vergelijking gaat verder dan de artikelprijs",
+        "inLanguage":"nl",
+        "articleSection":"Kosten en planning",
+        "description":"Maak een kostenoverzicht met artikelprijs, eventuele toeslagen, transport en toepasselijke invoerkosten.",
+        "articleBody":"SuperBuy verzendkosten inschatten doe je met de gegevens van je pakket en bestemming. Gewicht, afmetingen en de gekozen verzendoptie kunnen de uitkomst veranderen. Neem daarom geen oud voorbeeldbedrag over als offerte. Voor totale bestelkosten vergelijken houd je artikelprijs, binnenlandse bezorging, eventuele service- en betaalkosten, internationaal transport en toepasselijke invoerkosten apart bij. Controleer de actuele bedragen bij de betrokken aanbieder. Verzending naar Nederland voorbereiden vraagt om controle van bestemming en pakketgegevens. Verzending naar België vergelijken vraagt om een eigen berekening. Retourvoorwaarden vóór bestellen lezen helpt om termijnen en mogelijke kosten te begrijpen. Een spreadsheet voor je aankoopplanning blijft bruikbaar als je per prijs en controle een datum noteert."
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#vragen",
+        "inLanguage":"nl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Wat is een SuperBuy spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Een SuperBuy spreadsheet is een geordende verzameling productverwijzingen voor je voorselectie. Zo’n overzicht kan categorieën, foto’s, maatnotities en prijsvermeldingen bevatten. Controleer de oorspronkelijke productpagina voordat je een keuze maakt."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe gebruik je een SuperBuy spreadsheet als beginner?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Kies een categorie, bewaar de oorspronkelijke productlink en controleer variant, maat en voorwaarden. Noteer daarna de kosten en eventuele open vragen. Deze pagina biedt een keuzegids; de categorieknoppen openen hipobuyfind.com."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Waar vind je SuperBuy finds voor schoenen en kleding?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Begin met een afgebakende categorie, zoals sneakers, hoodies of T-shirts, en vergelijk daarna de productgegevens. De categorieën bovenaan verwijzen naar hipobuyfind.com; beschikbaarheid en ondersteuning door een aankoopdienst moet je afzonderlijk controleren."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Zijn QC-foto’s een bewijs van authenticiteit?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nee. QC-foto’s kunnen zichtbare kenmerken, een verkeerde uitvoering of beschadiging tonen. Ze bewijzen geen authenticiteit, materiaalsamenstelling of duurzaamheid. Vraag om herkomstinformatie wanneer die bepalend is voor je aankoop."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Is de prijs in een spreadsheet inclusief verzending?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Ga daar niet van uit. Controleer welke kosten de vermelding omvat en bereken artikelprijs, bezorging, eventuele toeslagen, internationale verzending en toepasselijke invoerkosten afzonderlijk. Alleen een actuele berekening voor jouw bestelling geeft een bruikbaar totaal."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Is deze pagina een officiële SuperBuy-website?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nee. Dit is een onafhankelijke Nederlandstalige informatiepagina. SuperBuy en de afgebeelde merken worden uitsluitend ter herkenning genoemd. De verwijzingen naar hipobuyfind.com betekenen geen officiële samenwerking of merkgoedkeuring."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kzsqd/">
+</head>
+<body>
+  <div class="topbar">
+    Een frisse blik op sneakers, kleding &amp; accessoires · Nederlandstalige keuzegids
+  </div>
+
+  <header class="header wrap">
+    <a class="brand" href="https://www.hipobuyfind.com" aria-label="Bezoek hipobuyfind.com">
+      hipobuyfind.com <span>/ stijlgids</span>
+    </a>
+    <nav class="header-nav" aria-label="Meer ontdekken">
+      <a href="https://www.hipobuyfind.com">Collecties bekijken ↗</a>
+      <a href="https://www.hipobuyfind.com">Producten ontdekken ↗</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="category-section" aria-labelledby="categorie-titel">
+      <div class="category-label">
+        <h2 id="categorie-titel">Begin bij jouw categorie</h2>
+        <p>Rechtstreeks naar de categorieën op hipobuyfind.com</p>
+      </div>
+      <nav class="categories" aria-label="Tien productcategorieën">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html">
+          Schoenen <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">
+          Hoodies &amp; sweaters <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html">
+          T-shirts <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html">
+          Jassen <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">
+          Broeken &amp; shorts <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html">
+          Petten &amp; mutsen <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html">
+          Kleding-sets <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">
+          Ondergoed <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html">
+          Sportshirts <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html">
+          Accessoires <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </section>
+
+    <section class="hero" aria-labelledby="hoofdtitel">
+      <div class="hero-copy">
+        <p class="eyebrow">Stijl begint met goed kijken</p>
+        <h1 id="hoofdtitel">
+          SuperBuy spreadsheet.<br>
+          <em>Kies met aandacht.</em>
+        </h1>
+        <p>
+          Van een opvallende sneaker tot een rustig accessoire: verzamel inspiratie,
+          vergelijk de details en bepaal wat bij jou past. Met heldere uitleg over
+          maten, foto’s en kosten.
+        </p>
+        <a class="button" href="https://www.hipobuyfind.com">
+          Ontdek de productoverzichten <span aria-hidden="true">↗</span>
+        </a>
+        <small>Je gaat naar hipobuyfind.com · Onafhankelijke oriëntatie</small>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=960&amp;q=78"
+          width="960"
+          height="640"
+          alt="Rode Nike sportschoenen met witte swoosh op een rode achtergrond"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>
+          Nike als stijlinspiratie. De foto is geen voorraadvermelding of echtheidsgarantie.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="intro" aria-labelledby="kort-antwoord">
+      <h2 id="kort-antwoord" class="eyebrow">Het korte antwoord</h2>
+      <div>
+        <p>
+          <strong>Een SuperBuy spreadsheet is een geordende verzameling
+          productverwijzingen voor je voorselectie.</strong>
+          Gebruik het overzicht om ideeën te bewaren en artikelen naast elkaar te
+          leggen. Controleer vervolgens de oorspronkelijke productpagina: een
+          opgeslagen foto, maat of prijs kan verouderd zijn.
+        </p>
+        <p>
+          Deze pagina is een Nederlandstalige keuzegids, zonder eigen live
+          productdatabase. De categorieën openen hipobuyfind.com. Of een specifieke
+          productlink via jouw gekozen aankoopdienst werkt, controleer je daar
+          afzonderlijk.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="stijl-titel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Het stijldossier</p>
+          <h2 id="stijl-titel">Een sportieve basis.<br>Een persoonlijk detail.</h2>
+        </div>
+        <p>
+          Bekijk beelden als inspiratie voor verhoudingen, kleur en afwerking.
+          Controleer productgegevens altijd los van de sfeerfoto.
+        </p>
+      </div>
+
+      <div class="mood-grid">
+        <figure class="mood-card">
+          <a href="https://www.hipobuyfind.com">
+            <div class="photo">
+              <img
+                src="https://ca.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-casquette-lv-signature--M7282M_PM1_Look%20view.jpg?wid=640"
+                alt="Model met Louis Vuitton-pet, grijze monogramsjaal, roze jas en lichte sneakers"
+                width="730"
+                height="913"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <h3>Louis Vuitton · laagjes &amp; hoofddeksels ↗</h3>
+          </a>
+          <figcaption>
+            <p>
+              Een pet bij je outfit kiezen begint bij kleur en proportie.
+              Voor een sjaal met je jas combineren vergelijk je ook de lengte en
+              het volume.
+            </p>
+            <span class="tag">Vorm, kleur, pasvorm</span>
+          </figcaption>
+        </figure>
+
+        <figure class="mood-card">
+          <a href="https://www.hipobuyfind.com">
+            <div class="photo">
+              <img
+                src="https://media.gucci.com/style/DarkGray_Center_0_0_600x600/1726587016/814949_J8400_8106_002_100_0000_Light-Gucci-Interlocking-ring.jpg"
+                alt="Zilverkleurige Gucci-ring met opengewerkt Interlocking G-motief"
+                width="600"
+                height="600"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <h3>Gucci · een helder accent ↗</h3>
+          </a>
+          <figcaption>
+            <p>
+              Een ringmaat thuis bepalen vraagt om een nauwkeurige meting.
+              Vergelijk de binnendiameter of omtrek met de tabel van de aanbieder.
+            </p>
+            <span class="tag">Maat vóór uitstraling</span>
+          </figcaption>
+        </figure>
+
+        <figure class="mood-card">
+          <a href="https://www.hipobuyfind.com">
+            <div class="photo">
+              <img
+                src="https://di2ponv0v5otw.cloudfront.net/posts/2022/11/19/63793e45abe6b2af1ff90b8f/m_639fa839b07898c27d28fea2.jpg"
+                alt="Hermès Carré-sjaal met een gedetailleerd patroon in blauw, lavendel en grijs"
+                width="580"
+                height="580"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <h3>Hermès · kleur in een detail ↗</h3>
+          </a>
+          <figcaption>
+            <p>
+              Een sjaal op formaat vergelijken helpt bij je gewenste knoop.
+              Bekijk de materiaalaanduiding en onderhoudsinstructies voor
+              praktisch gebruik.
+            </p>
+            <span class="tag">Textuur &amp; verhouding</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="image-note">
+        Redactionele merkbeelden ter inspiratie, afkomstig van externe beeldhosts.
+        Ze tonen geen bevestigde voorraad op hipobuyfind.com en bewijzen geen
+        authenticiteit van aanbiedingen. Merknamen blijven eigendom van hun
+        respectieve houders.
+      </p>
+    </section>
+
+    <section class="dossier" aria-labelledby="start-titel">
+      <div class="dossier-intro">
+        <p class="eyebrow">Van vondst naar voorselectie</p>
+        <h2 id="start-titel">Zo gebruik je het overzicht.</h2>
+        <p>
+          Een SuperBuy spreadsheet voor beginners werkt het prettigst wanneer
+          elke bewaarde vondst dezelfde controles krijgt. Met vier korte stappen
+          houd je overzicht.
+        </p>
+        <a href="https://www.hipobuyfind.com">Bekijk de productoverzichten ↗</a>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <h3>Kies één categorie</h3>
+          <p>
+            SuperBuy finds voor sneakers zoeken wordt overzichtelijker als je
+            eerst het type schoen bepaalt. Voor kleding vergelijken per categorie
+            begin je bij het kledingstuk dat je werkelijk nodig hebt.
+          </p>
+        </li>
+        <li>
+          <h3>Bewaar de bron en de variant</h3>
+          <p>
+            Een productlink uit een spreadsheet controleren betekent de pagina
+            openen en kleur, maat en uitvoering opnieuw lezen. Productvarianten
+            naast elkaar vergelijken lukt beter wanneer je hun volledige namen
+            opschrijft.
+          </p>
+        </li>
+        <li>
+          <h3>Controleer wat je kunt onderbouwen</h3>
+          <p>
+            Een maattabel in centimeters lezen, productfoto’s met QC-foto’s
+            vergelijken en de materiaalomschrijving bekijken levert concretere
+            informatie op dan een losse kwaliteitsclaim.
+          </p>
+        </li>
+        <li>
+          <h3>Maak je eigen beslisnotitie</h3>
+          <p>
+            Een productselectie bijhouden in een spreadsheet hoeft niet ingewikkeld
+            te zijn: noteer de link, maat, kosten, controledatum en wat je nog
+            moet navragen.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="artikelen-titel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Drie praktische artikelen</p>
+          <h2 id="artikelen-titel">De details die je keuze veranderen.</h2>
+        </div>
+        <p>
+          Lees de controlepunten voordat je een product bewaart of een bestelling
+          voorbereidt.
+        </p>
+      </div>
+
+      <div class="journal">
+        <article id="artikel-maat" aria-labelledby="maat-titel">
+          <p class="topic">01 / Maat &amp; pasvorm</p>
+          <h3 id="maat-titel">Sneakers en kleding: laat centimeters beslissen</h3>
+          <p>
+            Een <strong>SuperBuy maattabel vergelijken</strong> begint bij het
+            specifieke model. Een bekende EU-maat is geen vervanging voor de tabel
+            van de verkoper. Meet je voetlengte en bekijk welke meetmethode wordt
+            gebruikt; een binnenzoolmaat is iets anders dan voetlengte.
+          </p>
+          <p>
+            Voor een hoodie of sweater zijn borstbreedte, ruglengte en mouwlengte
+            nuttiger dan alleen S, M of L. Leg een goed passend kledingstuk plat
+            en vergelijk dezelfde meetpunten.
+          </p>
+          <ul>
+            <li>
+              <strong>Een T-shirt met ruime pasvorm kiezen:</strong>
+              let op schouderbreedte én lengte.
+            </li>
+            <li>
+              <strong>Een jas voor laagjes vergelijken:</strong>
+              houd ruimte voor wat je eronder draagt.
+            </li>
+            <li>
+              <strong>Een broek of short op taille selecteren:</strong>
+              controleer ook heupmaat en lengte.
+            </li>
+            <li>
+              <strong>Een kleding-set op maat kiezen:</strong>
+              bovenstuk en broek moeten afzonderlijk passen.
+            </li>
+          </ul>
+        </article>
+
+        <article id="artikel-qc" aria-labelledby="qc-titel">
+          <p class="topic">02 / Beeld &amp; controle</p>
+          <h3 id="qc-titel">QC-foto’s lezen zonder te veel te beloven</h3>
+          <p>
+            <strong>SuperBuy QC-foto’s beoordelen</strong> betekent eerst
+            vaststellen dat de foto’s jouw gekozen uitvoering tonen. Vergelijk
+            kleur, maatlabel, aantal en zichtbare staat met je bestelling.
+            Een productfoto kan door licht of nabewerking afwijken.
+          </p>
+          <p>
+            Voor <strong>sneakers op afwerking controleren</strong> zijn foto’s
+            van beide schoenen, zolen en naden nuttig. Bij kleding naden en labels
+            bekijken helpt om verkeerde uitvoeringen of zichtbare schade te
+            signaleren.
+          </p>
+          <p>
+            Voor een pet de omtrek controleren blijft een maatopgave nodig; een
+            foto vertelt weinig over pasvorm. Sieraden op materiaal vergelijken
+            vraagt om een duidelijke productspecificatie. Een close-up van een
+            ring of sluiting vervangt die informatie niet.
+          </p>
+          <p>
+            <strong>QC is een visuele controle, geen bewijs van echtheid,
+            materiaalveiligheid of levensduur.</strong>
+            Bewaar de bronlink en vraag om aanvullende informatie als een
+            belangrijk detail ontbreekt.
+          </p>
+        </article>
+
+        <article id="artikel-kosten" aria-labelledby="kosten-titel">
+          <p class="topic">03 / Kosten &amp; planning</p>
+          <h3 id="kosten-titel">Een eerlijke vergelijking gaat verder dan de artikelprijs</h3>
+          <p>
+            <strong>SuperBuy verzendkosten inschatten</strong> doe je met de
+            gegevens van je pakket en bestemming. Gewicht, afmetingen en de
+            gekozen verzendoptie kunnen de uitkomst veranderen. Neem daarom geen
+            oud voorbeeldbedrag over als offerte.
+          </p>
+          <p>
+            Voor <strong>totale bestelkosten vergelijken</strong> houd je
+            artikelprijs, binnenlandse bezorging, eventuele service- en
+            betaalkosten, internationaal transport en toepasselijke invoerkosten
+            apart bij. Controleer de actuele bedragen bij de betrokken aanbieder.
+          </p>
+          <p>
+            Verzending naar Nederland voorbereiden vraagt om controle van
+            bestemming en pakketgegevens. Verzending naar België vergelijken
+            vraagt om een eigen berekening. Retourvoorwaarden vóór bestellen
+            lezen helpt om termijnen en mogelijke kosten te begrijpen.
+          </p>
+          <p>
+            Een spreadsheet voor je aankoopplanning blijft bruikbaar als je per
+            prijs en controle een datum noteert.
+          </p>
+        </article>
+      </div>
+
+      <div class="compare" role="region" aria-label="Vergelijking van informatiebronnen" tabindex="0">
+        <table>
+          <caption>Welke bron helpt bij welke vraag?</caption>
+          <thead>
+            <tr>
+              <th scope="col">Bron</th>
+              <th scope="col">Bruikbaar voor</th>
+              <th scope="col">Zelf nog controleren</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Spreadsheet of overzicht</th>
+              <td>Ideeën bewaren en productlinks ordenen.</td>
+              <td>Actualiteit van link, prijs en variant.</td>
+            </tr>
+            <tr>
+              <th scope="row">Productpagina</th>
+              <td>Omschrijving, maatkeuze en vermelde voorwaarden.</td>
+              <td>Meetmethode, materiaalspecificatie en beschikbare uitvoering.</td>
+            </tr>
+            <tr>
+              <th scope="row">QC-foto’s</th>
+              <td>Zichtbare staat en uitvoering bekijken.</td>
+              <td>Of de foto’s bij jouw bestelling horen en welke details ontbreken.</td>
+            </tr>
+            <tr>
+              <th scope="row">Kostenberekening</th>
+              <td>Je bestelling en verzending begroten.</td>
+              <td>Inbegrepen posten, datum, bestemming en pakketgegevens.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detail-strip" aria-labelledby="detail-titel">
+        <img
+          src="https://before-images-item.croketglobal.net/item/thumbnail/80d3191722a296e41551dfad2ca1b1a4.webp"
+          width="1000"
+          height="1000"
+          loading="lazy"
+          decoding="async"
+          alt="Dior Tribales-oorbellen met kleine en grote witte parelvormen en goudkleurige details">
+        <div>
+          <p class="eyebrow">Dior / een detail uitgelicht</p>
+          <h3 id="detail-titel">Klein accessoire, concrete vragen.</h3>
+          <p>
+            Oorbellen op sluiting vergelijken? Bekijk de achterkant en vraag naar
+            gewicht, afmetingen en materiaal. Bij accessoires de
+            productspecificaties lezen helpt om te beoordelen of een ontwerp
+            praktisch bij je past. Ook dit beeld is uitsluitend stijlinspiratie.
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section faq-layout" id="vragen" aria-labelledby="faq-titel">
+      <div class="faq-intro">
+        <p class="eyebrow">Vragen, helder beantwoord</p>
+        <h2 id="faq-titel">Eerst begrijpen.<br>Dan kiezen.</h2>
+        <p>
+          Een paar directe antwoorden over een SuperBuy spreadsheet,
+          productverwijzingen en de controles die je zelf uitvoert.
+        </p>
+      </div>
+
+      <div>
+        <details open>
+          <summary>Wat is een SuperBuy spreadsheet?</summary>
+          <p>
+            Een SuperBuy spreadsheet is een geordende verzameling
+            productverwijzingen voor je voorselectie. Zo’n overzicht kan
+            categorieën, foto’s, maatnotities en prijsvermeldingen bevatten.
+            Controleer de oorspronkelijke productpagina voordat je een keuze maakt.
+          </p>
+        </details>
+        <details>
+          <summary>Hoe gebruik je een SuperBuy spreadsheet als beginner?</summary>
+          <p>
+            Kies een categorie, bewaar de oorspronkelijke productlink en controleer
+            variant, maat en voorwaarden. Noteer daarna de kosten en eventuele
+            open vragen. Deze pagina biedt een keuzegids; de categorieknoppen
+            openen hipobuyfind.com.
+          </p>
+        </details>
+        <details>
+          <summary>Waar vind je SuperBuy finds voor schoenen en kleding?</summary>
+          <p>
+            Begin met een afgebakende categorie, zoals sneakers, hoodies of
+            T-shirts, en vergelijk daarna de productgegevens. De categorieën
+            bovenaan verwijzen naar hipobuyfind.com; beschikbaarheid en
+            ondersteuning door een aankoopdienst moet je afzonderlijk controleren.
+          </p>
+        </details>
+        <details>
+          <summary>Zijn QC-foto’s een bewijs van authenticiteit?</summary>
+          <p>
+            Nee. QC-foto’s kunnen zichtbare kenmerken, een verkeerde uitvoering
+            of beschadiging tonen. Ze bewijzen geen authenticiteit,
+            materiaalsamenstelling of duurzaamheid. Vraag om herkomstinformatie
+            wanneer die bepalend is voor je aankoop.
+          </p>
+        </details>
+        <details>
+          <summary>Is de prijs in een spreadsheet inclusief verzending?</summary>
+          <p>
+            Ga daar niet van uit. Controleer welke kosten de vermelding omvat en
+            bereken artikelprijs, bezorging, eventuele toeslagen, internationale
+            verzending en toepasselijke invoerkosten afzonderlijk. Alleen een
+            actuele berekening voor jouw bestelling geeft een bruikbaar totaal.
+          </p>
+        </details>
+        <details>
+          <summary>Is deze pagina een officiële SuperBuy-website?</summary>
+          <p>
+            Nee. Dit is een onafhankelijke Nederlandstalige informatiepagina.
+            SuperBuy en de afgebeelde merken worden uitsluitend ter herkenning
+            genoemd. De verwijzingen naar hipobuyfind.com betekenen geen
+            officiële samenwerking of merkgoedkeuring.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="verder-titel">
+      <div>
+        <h2 id="verder-titel">Neem je eigen maatstaf mee.</h2>
+        <p>
+          Ontdek een categorie, vergelijk de gegevens en bewaar alleen wat
+          aansluit bij jouw stijl, maten en budget.
+        </p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">
+        Verder op hipobuyfind.com <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer-row">
+      <a href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <span>Onafhankelijke Nederlandstalige informatie · Stijl &amp; productonderzoek</span>
+    </div>
+    <p>
+      Deze gids verwerkt geen bestellingen of betalingen. Genoemde merken en
+      SuperBuy zijn niet aan deze pagina verbonden. Foto’s zijn redactionele
+      voorbeelden; controleer herkomst, productspecificaties en actuele
+      voorwaarden bij de betreffende aanbieder.
+    </p>
+  </footer>
+</body>
+</html>
